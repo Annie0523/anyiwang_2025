@@ -1,9 +1,9 @@
-title: Nighthawk Pages 
+title: Anyi_2025
 description: "Class of 2025"
-owner_name: John Mortensen
-github_username: nighthawkcoders
-github_repo: "student_2025" 
-baseurl: "/student_2025"
+owner_name: Anyi Wang
+github_username: Annie0523
+github_repo: "Anyi_2025" 
+baseurl: "/Anyi_2025"
 future: true
 remote_theme: jekyll/minima
 minima:
