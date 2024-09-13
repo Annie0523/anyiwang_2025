@@ -88,7 +88,18 @@ permalink: /journey/
 </div>
 
 <div id="journey3" class="journey-detail" style="display:none;">
-    
+    <h2>09/10/2024</h2>
+    <p>I did more edition on my about page, include text and some images</p>
+    <p>The Images I put in didn't go well at first, and all the pictures are really big and full my screen, which made me distressed. I searched up on the website and also the CSP guide and find that we could actually control the size of the images using "style" code</p>
+    <p> .medium-text { font-size: 20px; }</p>
+    <p>"p class="medium-text">- My name is Anyi Wang/p"</p>
+    <p>Additionally, I made the pictures into a gallary similar as the example showed on Mr. Mortensen's website</p>
+    <h2>09/11/2024</h2>
+    <p>I added side background to my website, making my pages become more colorful</p>
+    <h2>09/12/2024</h2>
+    <p>I added a snake game page to my website. I got the code from chat-gpt, but it doesn't have a restart button. I worked out a restart button by myself, with the help on google</p>
+    <p>The game is still not complete: snake moves so fast that I'm hard to control the direction</p>
+
 </div>
 
 <div id="journey4" class="journey-detail" style="display:none;">
