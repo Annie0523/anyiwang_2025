@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Journey
-permalink: /journey/
+title: Notes
+permalink: /notes/
 ---
 <style>
         body {

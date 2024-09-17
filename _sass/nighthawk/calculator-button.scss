@@ -1,0 +1,7 @@
+// STYLING PREFERENCES for Calculator Pages 
+
+/* define class for redefined button */
+.calculator-number, .calculator-operation, .calculator-clear, .calculator-equals {
+    @include button();
+    // Additional styles for each button type
+  }

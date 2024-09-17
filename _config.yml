@@ -26,7 +26,6 @@ header_pages:
   - navigation/about.md
   - README4YML.md
   - navigation/music.md
-  - navigation/journey.md
+  - navigation/notes.md
   - navigation/game.md
-exclude:
-  - _notebooks
+

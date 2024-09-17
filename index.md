@@ -59,43 +59,19 @@ image: /images/mario_animation.png
     <div class="right-pattern"></div>
 
 </body>
-# Welcome to My Project
+# Welcome to Anyi's Website
 
-Here, you'll find a collection of my personal interests and various projects I'm working on.
+Here, you'll find a unique me
 
 ## Submenu
 
-- [Planning Notebook](_notebooks/Notes/Planning.md)
+- [Notebook](_notebooks/Notes/Planning.md)
 - [About Page](navigation/about.md)
+- [School Resource](https://delnorte.powayusd.com/)
+- [AP Classroom](https://apstudents.collegeboard.org/)
+- [Chat](https://join.slack.com/t/cs-p-hq/shared_invite/zt-2ovqn139v-y1D3J1ljCzKpDj3hpOQifQ)
 
-Below are some images and links related to my projects:
 
-### My Interests
-
-- Science Olympiad team collaboration and academic competitions
-  - ![Competition](images/science_competition.jpg)
-  - [Read More](competition_details.md)
-  
-- UCSD OPALS Internship on Alzheimer's research
-  - ![Alzheimer's Research](images/ucsd_opals.jpg)
-  - [Read More](opals_internship.md)
-  
-- Guzheng Music Performances
-  - ![Guzheng](images/guzheng_performance.jpg)
-  - [Read More](guzheng_music.md)
-
-### About the Project
-This project represents the blend of my passions—engineering, physics, traditional Chinese music, and cultural exchange. Explore the links above to see more about my work and interests.
-
-My journey starts here.
-<h2>School Resource</h2>
-<a href="https://delnorte.powayusd.com/" target="_blank">DNHS</a>
-<h2>AP Classroom</h2>
-<a href="https://apstudents.collegeboard.org/" target="_blank">AP Collegeboard</a>
-<h2>Chat</h2>
-<a href="https://join.slack.com/t/cs-p-hq/shared_invite/zt-2ovqn139v-y1D3J1ljCzKpDj3hpOQifQ" target="_blank">Slack</a>
-<h2>Code</h2>
-<a href="https://github.com/signup" target="_blank">Github</a>
 <h2>My Notes</h2>
 <a href="http://127.0.0.1:4100/Anyi_2025/journey/#"target="_blank">Link to my journey</a>
 

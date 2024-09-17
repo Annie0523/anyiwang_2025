@@ -1,0 +1,18 @@
+// _mixins.scss
+
+// Mixin used as a template for buttons
+
+@mixin button() {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.calc-button {
+  @include button();
+}
