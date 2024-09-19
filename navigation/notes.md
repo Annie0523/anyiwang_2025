@@ -58,11 +58,11 @@ permalink: /notes/
     </style>
 <body>
 
-    <!-- 左侧花纹 -->
-    <div class="left-pattern"></div>
+<!-- 左侧花纹 -->
+<div class="left-pattern"></div>
 
-    <!-- 右侧花纹 -->
-    <div class="right-pattern"></div>
+<!-- 右侧花纹 -->
+<div class="right-pattern"></div>
 
 </body>
 <!-- Journey List -->
@@ -112,6 +112,20 @@ permalink: /notes/
     <h2>09/12/2024</h2>
     <p>I added a snake game page to my website. I got the code from chat-gpt, but it doesn't have a restart button. I worked out a restart button by myself, with the help on google</p>
     <p>The game is still not complete: snake moves so fast that I'm hard to control the direction</p>
+
+</div>
+
+<div id="journey4" class="journey-detail" style="display:none;">
+    <h2>09/15/2024</h2>
+    <p>I did the rainbow and js calculator during weekends and conticue working on it today</p>
+    <p>at first I was a little bit confused about the difference between .scss and .css</p>
+    <p>Now I figure it out that SCSS is essentially an enhanced version of CSS that allows for more powerful and organized styling capabilities.</p>
+    <p>Putting things in the right folder really helps management</p>
+    <h2>09/16/2024</h2>
+    <p>I added the cookieclicker game to my website</p>
+    <p>I found that adding sounds to the game has a really similar process as adding images, and only need to copy the mp3 I downloaded into my folder and code a relative path to it</p>
+    <h2>09/17/2024</h2>
+    <p>I continue making improvement on the website and try to change its style</p>
 
 </div>
 

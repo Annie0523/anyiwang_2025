@@ -14,8 +14,7 @@ permalink: /game/
             margin: 0;
             padding: 0;
         }
-
-        /* 左侧花纹 */
+/* 左侧花纹 */
         .left-pattern {
             position: fixed;
             left: 0;
@@ -26,8 +25,7 @@ permalink: /game/
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        /* 右侧花纹 */
+/* 右侧花纹 */
         .right-pattern {
             position: fixed;
             right: 0;
@@ -38,8 +36,7 @@ permalink: /game/
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        /* 内容居中显示 */
+/* 内容居中显示 */
         .content {
             margin: 0 auto;
             max-width: 800px;
@@ -49,11 +46,11 @@ permalink: /game/
     </style>
 <body>
 
-    <!-- 左侧花纹 -->
-    <div class="left-pattern"></div>
+<!-- 左侧花纹 -->
+<div class="left-pattern"></div>
 
-    <!-- 右侧花纹 -->
-    <div class="right-pattern"></div>
+<!-- 右侧花纹 -->
+<div class="right-pattern"></div>
 
 </body>
 <style>

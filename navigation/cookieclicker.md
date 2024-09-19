@@ -1,106 +1,94 @@
 ---
 layout: page
-title: Cookieclicker
-permalink: /game/
+title: CookieClicker
+permalink: /cookieclicker/
 ---
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Clicker Game</title>
+    <title>Cookie Clicker</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #000;
+            color: #fff;
         }
-
         #game {
-            margin-top: 50px;
+            margin-top: 100px;
         }
-
         #cookie {
-            cursor: pointer;
+            height: 300px; /* Set the cookie height */
+            transition: transform 0.2s;
         }
-
-        #shop {
-            margin-top: 30px;
+        #cookie:active {
+            transform: scale(0.9); /* Shrink the cookie a little when clicked */
         }
-
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
+        #cookie.glow {
+            animation: glowEffect 0.5s ease-out;
         }
-
-        button:hover {
-            background-color: #45a049;
+        @keyframes glowEffect {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 255, 0, 0.8); /* 初始小光圈，黄色 */
+            }
+            100% {
+                box-shadow: 0 0 30px 20px rgba(255, 255, 0, 0); /* 扩散到黄色柔光 */
+            }
+        }
+        p {
+            font-size: 24px;
+            color: yellow;
+        }
+        .left-pattern, .right-pattern {
+            position: fixed;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left-pattern {
+            left: 0;
+        }
+        .right-pattern {
+            right: 0;
+        }
+        .content {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Cookie Clicker Game</h1>
+    <div class="left-pattern"></div>
+    <div class="right-pattern"></div>
     <div id="game">
-        <!-- Cookie image -->
-        <img id="cookie" src="images/cookie.png" alt="Cookie" width="200">
-        <!-- Display number of cookies -->
+        <img id="cookie" src="{{site.baseurl}}/images/cookie.png" alt="cookie">
         <p>Cookies: <span id="cookieCount">0</span></p>
     </div>
+    <audio id="clickSound" src="{{site.baseurl}}/assets/sound/click.mp3"></audio>
     
-    <div id="shop">
-        <h2>Shop</h2>
-        <!-- Button to buy workers -->
-        <button id="buyWorker">Buy Worker (Cost: 10 cookies)</button>
-        <!-- Display number of workers -->
-        <p>Workers: <span id="workerCount">0</span></p>
-    </div>
-
-    <!-- Sound for clicking the cookie -->
-    <audio id="clickSound" src="/assets/sounds/click.mp3"></audio>
-
-    <script>
-        // Variables to track cookie count and worker count
+<script>
         let cookieCount = 0;
-        let workerCount = 0;
-        let workerCost = 10;
-        let cookiesPerSecond = 0;
-
-        // Get DOM elements for displaying data and interacting with the game
         const cookie = document.getElementById('cookie');
         const cookieCountDisplay = document.getElementById('cookieCount');
-        const workerCountDisplay = document.getElementById('workerCount');
-        const buyWorkerButton = document.getElementById('buyWorker');
         const clickSound = document.getElementById('clickSound');
 
-        // Event listener for clicking the cookie
         cookie.addEventListener('click', () => {
-            cookieCount++;  // Increment cookie count
-            cookieCountDisplay.textContent = cookieCount;  // Update display
-            clickSound.play();  // Play click sound
+            cookieCount++;
+            cookieCountDisplay.textContent = cookieCount;
+            clickSound.play();
+
+            // Add glow effect
+            cookie.classList.add('glow');
+            
+            // Remove the glow effect after the animation ends
+            setTimeout(() => {
+                cookie.classList.remove('glow');
+            }, 500);
         });
-
-        // Event listener for buying a worker
-        buyWorkerButton.addEventListener('click', () => {
-            if (cookieCount >= workerCost) {
-                workerCount++;  // Increment worker count
-                cookieCount -= workerCost;  // Deduct cookies for buying a worker
-                workerCost = Math.floor(workerCost * 1.5);  // Increase worker cost for next purchase
-                workerCountDisplay.textContent = workerCount;  // Update worker count display
-                buyWorkerButton.textContent = `Buy Worker (Cost: ${workerCost} cookies)`;  // Update button text
-
-                // Increase passive cookie generation
-                cookiesPerSecond += 1;
-            }
-        });
-
-        // Passive cookie generation every second
-        setInterval(() => {
-            cookieCount += cookiesPerSecond;  // Add passive cookies
-            cookieCountDisplay.textContent = cookieCount;  // Update cookie count display
-        }, 1000);
     </script>
 </body>
-</html>

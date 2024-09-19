@@ -24,12 +24,10 @@ permalink: /music/
 </body>
 <style>
         body {
-            background-color: black;
-            color: white;
-            margin: 0;
-            padding: 0;
+            text-align: left;
+            background-color: #000;
+            color: #fff;
         }
-
         /* 左侧花纹 */
         .left-pattern {
             position: fixed;
@@ -41,7 +39,6 @@ permalink: /music/
             background-repeat: no-repeat;
             background-size: cover;
         }
-
         /* 右侧花纹 */
         .right-pattern {
             position: fixed;
@@ -53,7 +50,6 @@ permalink: /music/
             background-repeat: no-repeat;
             background-size: cover;
         }
-
         /* 内容居中显示 */
         .content {
             margin: 0 auto;
@@ -63,10 +59,8 @@ permalink: /music/
         }
     </style>
 <body>
-
     <!-- 左侧花纹 -->
     <div class="left-pattern"></div>
-
     <!-- 右侧花纹 -->
     <div class="right-pattern"></div>
 
