@@ -57,23 +57,164 @@ image: /images/mario_animation.png
 
     <!-- 右侧花纹 -->
     <div class="right-pattern"></div>
+  </body>
 
-</body>
 # Welcome to Anyi's Website
 
 Here, you'll find a unique me
 
 ## Submenu
 
-- [Notebook](_notebooks/Notes/Planning.md)
+- [Notebook](navigation/notes.md)
 - [About Page](navigation/about.md)
 - [School Resource](https://delnorte.powayusd.com/)
 - [AP Classroom](https://apstudents.collegeboard.org/)
 - [Chat](https://join.slack.com/t/cs-p-hq/shared_invite/zt-2ovqn139v-y1D3J1ljCzKpDj3hpOQifQ)
 
+## Rainbow Animation
+Here is a rainbow animation:
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainbow Square</title>
+  <style>
+    #rainbow-square {
+      width: 100px; /* Size of the square */
+      height: 100px;
+      background-color: green; /* Initial color */
+      animation: rainbow 3s infinite; /* Animation name, duration, and repetition */
+    }
 
-<h2>My Notes</h2>
-<a href="http://127.0.0.1:4100/Anyi_2025/journey/#"target="_blank">Link to my journey</a>
+    /* Define the keyframes for the rainbow animation */
+    @keyframes rainbow {
+      0% {
+        background-color: green; /* Start color */
+      }
+      50% {
+        background-color: blue; /* Mid color */
+      }
+      100% {
+        background-color: green; /* End color */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="rainbow-square"></div>
+</body>
+</html>
+<div class="rainbow"></div>
+
+## JavaScript Calculator
+
+<p>Here is a simple calculator:</p>
+
+<!-- Link to your existing calculator.js -->
+<script src="scripts/js-calculator.js"></script>
+
+<!-- Calculator structure -->
+<div id="animation">
+  <div class="calculator-container">
+      <!--result-->
+      <div class="calculator-output" id="output">0</div>
+
+      <!--row 1-->
+      <div class="calculator-row">
+        <div class="calculator-number" onclick="addNumber(1)">1</div>
+        <div class="calculator-number" onclick="addNumber(2)">2</div>
+        <div class="calculator-number" onclick="addNumber(3)">3</div>
+        <div class="calculator-operation" onclick="setOperation('+')">+</div>
+      </div>
+
+      <!--row 2-->
+      <div class="calculator-row">
+        <div class="calculator-number" onclick="addNumber(4)">4</div>
+        <div class="calculator-number" onclick="addNumber(5)">5</div>
+        <div class="calculator-number" onclick="addNumber(6)">6</div>
+        <div class="calculator-operation" onclick="setOperation('-')">-</div>
+      </div>
+
+      <!--row 3-->
+      <div class="calculator-row">
+        <div class="calculator-number" onclick="addNumber(7)">7</div>
+        <div class="calculator-number" onclick="addNumber(8)">8</div>
+        <div class="calculator-number" onclick="addNumber(9)">9</div>
+        <div class="calculator-operation" onclick="setOperation('*')">*</div>
+      </div>
+
+      <!--row 4-->
+      <div class="calculator-row">
+        <div class="calculator-clear" onclick="clearCalculator()">A/C</div>
+        <div class="calculator-number" onclick="addNumber(0)">0</div>
+        <div class="calculator-number" onclick="addDecimal()">.</div>
+        <div class="calculator-equals" onclick="calculateResult()">=</div>
+      </div>
+  </div>
+</div>
+<style>
+  .calculator-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+  }
+  .calculator-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  .calculator-output {
+    background-color: #f0f0f0;
+    color: black; /* Change text color to black */
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+  }
+  .calculator-number, .calculator-operation, .calculator-clear, .calculator-equals {
+    background-color: #f0f0f0;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: black; /* Change text color to black */
+  }
+  .calculator-equals {
+    background-color: #4CAF50;
+    color: white; /* Keeps the equals button text white for contrast */
+  }
+  .calculator-clear {
+    background-color: #f44336;
+    color: white; /* Keeps the clear button text white for contrast */
+  }
+</style>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario Animation</title>
+  <style>
+    /* CSS style rules for the sprite */
+    .sprite {
+      height: 512px; /* Make the sprite larger */
+      width: 512px;  /* Make the sprite larger */
+      background-image: url('{{sprite_file}}');
+      background-repeat: no-repeat;
+    }
+
+    /* Ensuring Mario starts at a new position */
+    #mario {
+      background-position: calc({{animations[0].col}} * {{pixels}} * -1px) calc({{animations[0].row}} * {{pixels}} * -1px);
+      position: absolute; /* Ensure Mario's position is absolute */
+      top: 100px; /* Adjust starting vertical position */
+      left: 100px; /* Adjust starting horizontal position */
+    }
+  </style>
+</head>
 
 <!--- Concatenation of site URL to frontmatter image  --->
 {% assign sprite_file = site.baseurl | append: page.image %}
@@ -81,7 +222,6 @@ Here, you'll find a unique me
 {% assign hash = site.data.mario_metadata %}  
 <!--- Size width/height of Sprit images --->
 {% assign pixels = 256 %}
-
 <!--- HTML for page contains <p> tag named "Mario" and class properties for a "sprite"  -->
 
 <p id="mario" class="sprite"></p>

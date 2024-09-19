@@ -9,6 +9,55 @@ permalink: /game/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 左侧花纹 */
+        .left-pattern {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的左侧花纹图片链接 */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* 右侧花纹 */
+        .right-pattern {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的右侧花纹图片链接 */
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* 内容居中显示 */
+        .content {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+<body>
+
+    <!-- 左侧花纹 -->
+    <div class="left-pattern"></div>
+
+    <!-- 右侧花纹 -->
+    <div class="right-pattern"></div>
+
+</body>
+<style>
+        body {
             text-align: center;
             margin-top: 20px;
             font-family: Arial, sans-serif;

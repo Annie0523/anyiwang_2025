@@ -3,6 +3,19 @@ layout: page
 title: Notes
 permalink: /notes/
 ---
+### Goal 1: Create an interactive website with multiple notebooks
+- **Attempt**: Set up Jekyll and learned how to embed notebooks into the structure.
+- **Accomplishment**: Successfully linked notebooks and implemented various sections, including a planning document.
+
+### Goal 2: Enhance the website with custom scripts and interactive cells
+- **Attempt**: Tried incorporating JavaScript cells in one notebook.
+- **Accomplishment**: Implemented a basic JavaScript example and ensured it works within the notebook.
+
+### Goal 3: Share personal experiences and achievements through text and images
+- **Attempt**: Uploaded images and linked them with descriptions.
+- **Accomplishment**: Created a gallery of personal achievements, focusing on competitions and music.
+
+## Record
 <style>
         body {
             background-color: black;
