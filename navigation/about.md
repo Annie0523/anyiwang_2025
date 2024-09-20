@@ -1,7 +1,9 @@
 ---
-layout: page
+layout: post
 title: About
 permalink: /about/
+toc: true
+comments: true
 ---
 <html lang="en">
 <head>
