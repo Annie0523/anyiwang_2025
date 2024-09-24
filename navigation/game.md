@@ -13,7 +13,7 @@ permalink: /game/
         border-radius: 10px;
     
     canvas {
-        background-color: #C0C0C0; 
+        background-color: #200; 
         border: 2px solid #fff; 
 }
     .star-shimmer {

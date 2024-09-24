@@ -2,8 +2,8 @@ title: Anyi_2025
 description: "Class of 2025"
 owner_name: Anyi Wang
 github_username: Annie0523
-github_repo: "Anyi-Wang_2025"
-baseurl: "/Anyi-Wang_2025"
+github_repo: "anyiwang_2025"
+baseurl: "/anyiwang_2025"
 future: true
 remote_theme: jekyll/minima
 minima:
