@@ -13,9 +13,21 @@ permalink: /game/
         border-radius: 10px;
     
     canvas {
-        background-color: #001f3f; 
+        background-color: #C0C0C0; 
         border: 2px solid #fff; 
+}
+    .star-shimmer {
+        background-color: #C0C0C0;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 1%, transparent 10%);
+        background-size: 150% 150%;
+        animation: twinkle 2s infinite ease-in-out;
     }
+        .star-shimmer {
+        background-color: #C0C0C0;
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 1%, transparent 10%);
+        background-size: 150% 150%;
+        animation: twinkle 2s infinite ease-in-out;
+    }}
 
     #gameOver, #restartBtn {
         display: none;
@@ -44,7 +56,7 @@ permalink: /game/
 <div id="gameContainer">
     <p>Use arrow keys to move the snake</p>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
-    <p id="gameOver">Game Over!💀</p>
+    <h2 id="gameOver">Game Over!💀</h2>
     <button id="restartBtn" onclick="restartGame()">Restart</button>
 </div>
 
