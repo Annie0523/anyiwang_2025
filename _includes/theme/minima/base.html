@@ -2,6 +2,10 @@
 
 <body>
 
+  <!-- Left and right side patterns -->
+  <div class="left-pattern"></div>
+  <div class="right-pattern"></div>
+
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
@@ -13,3 +17,21 @@
   {%- include footer.html -%}
 
 </body>
+
+<style>
+    .left-pattern, .right-pattern {
+        position: fixed;
+        top: 0;
+        width: 200px;
+        height: 100%;
+        background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .left-pattern {
+        left: 0;
+    }
+    .right-pattern {
+        right: 0;
+    }
+</style>

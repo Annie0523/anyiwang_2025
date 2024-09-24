@@ -5,59 +5,6 @@ description: Home Page
 hide: true
 image: /images/mario_animation.png
 ---
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage with Decorative Patterns</title>
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* 左侧花纹 */
-        .left-pattern {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的左侧花纹图片链接 */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* 右侧花纹 */
-        .right-pattern {
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的右侧花纹图片链接 */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* 内容居中显示 */
-        .content {
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
-            text-align: center;
-        }
-</style>
-</head>
-<body>
-
-    <!-- 左侧花纹 -->
-    <div class="left-pattern"></div>
-
-    <!-- 右侧花纹 -->
-    <div class="right-pattern"></div>
-  </body>
 
 # Welcome to Anyi's Website
 
@@ -73,8 +20,7 @@ Here, you'll find a unique me
 
 ## Rainbow Animation
 Here is a rainbow animation:
-<html lang="en">
-<head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rainbow Square</title>
@@ -86,7 +32,7 @@ Here is a rainbow animation:
       animation: rainbow 3s infinite; /* Animation name, duration, and repetition */
     }
 
-    /* Define the keyframes for the rainbow animation */
+/* Define the keyframes for the rainbow animation */
     @keyframes rainbow {
       0% {
         background-color: green; /* Start color */
@@ -99,12 +45,9 @@ Here is a rainbow animation:
       }
     }
   </style>
-</head>
-<body>
+
   <div id="rainbow-square"></div>
-</body>
-</html>
-<div class="rainbow"></div>
+
 
 ## JavaScript Calculator
 
@@ -192,8 +135,7 @@ Here is a rainbow animation:
   }
 </style>
 
-<html lang="en">
-<head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mario Animation</title>
@@ -214,7 +156,7 @@ Here is a rainbow animation:
       left: 100px; /* Adjust starting horizontal position */
     }
   </style>
-</head>
+
 
 <!--- Concatenation of site URL to frontmatter image  --->
 {% assign sprite_file = site.baseurl | append: page.image %}
