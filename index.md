@@ -20,10 +20,6 @@ Here, you'll find a unique me
 
 ## Rainbow Animation
 Here is a rainbow animation:
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rainbow Square</title>
   <style>
     #rainbow-square {
       width: 100px; /* Size of the square */
