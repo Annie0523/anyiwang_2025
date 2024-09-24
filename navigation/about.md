@@ -5,23 +5,17 @@ permalink: /about/
 toc: true
 comments: true
 ---
-<!-- Side Patterns -->
-<div class="left-pattern"></div>
-<div class="right-pattern"></div>
-
 <!-- Main Content -->
 <div class="content">
     <p class="medium-text">- My name is Anyi Wang</p>
     <p class="medium-text">- 🏯2007.5.23 born in China → 👨‍👩‍👧‍👦2014.7.14 get a new home member, my brother born → ✈️2022.11 move to the U.S. with my family✈️</p>
     <p class="medium-text">- 🎓I decided to stay here and go to the college, my dream school is Purdue.</p>
     <p class="medium-text">- 👷🏻‍♀️I want to be an engineer in the future.</p>
-
-    <!-- Buttons -->
+<!-- Buttons -->
     <button class="btn" onclick="showMyHometown()">Show My Hometown</button>
     <button class="btn" onclick="FavoriteFood()">Favorite Food</button>
     <button class="btn" onclick="MusicTaste()">Music Taste</button>
-
-    <!-- Div for dynamic content insertion -->
+<!-- Div for dynamic content insertion -->
     <div id="content"></div>
 </div>
 

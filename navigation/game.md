@@ -3,24 +3,50 @@ layout: page
 title: Game🐍
 permalink: /game/
 ---
-<!-- Left Pattern -->
-<div class="left-pattern"></div>
+<style>
+    #gameContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+    
+    canvas {
+        background-color: #001f3f; 
+        border: 2px solid #fff; 
+    }
 
-<!-- Right Pattern -->
-<div class="right-pattern"></div>
+    #gameOver, #restartBtn {
+        display: none;
+    }
 
-<!-- Main Content Area -->
-<main class="page-content" aria-label="Content">
-    <div class="wrapper">
-        {{ content }}
-    </div>
-</main>
+    #restartBtn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: lime;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
 
-<!-- Snake Game Section -->
-<p>Use arrow keys to move the snake</p>
-<canvas id="gameCanvas" width="400" height="400"></canvas>
-<p id="gameOver">Game Over!💀</p>
-<button id="restartBtn" onclick="restartGame()">Restart</button>
+    #restartBtn:hover {
+        background-color: yellow;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+</style>
+
+<div id="gameContainer">
+    <p>Use arrow keys to move the snake</p>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <p id="gameOver">Game Over!💀</p>
+    <button id="restartBtn" onclick="restartGame()">Restart</button>
+</div>
 
 <!-- Snake Game Script -->
 <script>

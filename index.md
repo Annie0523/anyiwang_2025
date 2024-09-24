@@ -31,7 +31,6 @@ Here is a rainbow animation:
       background-color: green; /* Initial color */
       animation: rainbow 3s infinite; /* Animation name, duration, and repetition */
     }
-
 /* Define the keyframes for the rainbow animation */
     @keyframes rainbow {
       0% {
@@ -62,32 +61,32 @@ Here is a rainbow animation:
       <!--result-->
       <div class="calculator-output" id="output">0</div>
 
-      <!--row 1-->
-      <div class="calculator-row">
+  <!--row 1-->
+  <div class="calculator-row">
         <div class="calculator-number" onclick="addNumber(1)">1</div>
         <div class="calculator-number" onclick="addNumber(2)">2</div>
         <div class="calculator-number" onclick="addNumber(3)">3</div>
         <div class="calculator-operation" onclick="setOperation('+')">+</div>
       </div>
 
-      <!--row 2-->
-      <div class="calculator-row">
+<!--row 2-->
+<div class="calculator-row">
         <div class="calculator-number" onclick="addNumber(4)">4</div>
         <div class="calculator-number" onclick="addNumber(5)">5</div>
         <div class="calculator-number" onclick="addNumber(6)">6</div>
         <div class="calculator-operation" onclick="setOperation('-')">-</div>
       </div>
 
-      <!--row 3-->
-      <div class="calculator-row">
+<!--row 3-->
+<div class="calculator-row">
         <div class="calculator-number" onclick="addNumber(7)">7</div>
         <div class="calculator-number" onclick="addNumber(8)">8</div>
         <div class="calculator-number" onclick="addNumber(9)">9</div>
         <div class="calculator-operation" onclick="setOperation('*')">*</div>
       </div>
 
-      <!--row 4-->
-      <div class="calculator-row">
+<!--row 4-->
+<div class="calculator-row">
         <div class="calculator-clear" onclick="clearCalculator()">A/C</div>
         <div class="calculator-number" onclick="addNumber(0)">0</div>
         <div class="calculator-number" onclick="addDecimal()">.</div>
@@ -147,7 +146,6 @@ Here is a rainbow animation:
       background-image: url('{{sprite_file}}');
       background-repeat: no-repeat;
     }
-
     /* Ensuring Mario starts at a new position */
     #mario {
       background-position: calc({{animations[0].col}} * {{pixels}} * -1px) calc({{animations[0].row}} * {{pixels}} * -1px);

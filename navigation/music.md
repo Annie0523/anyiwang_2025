@@ -4,53 +4,20 @@ title: Music
 search_exclude: true
 permalink: /music/
 ---
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Size Example</title>
-    <style>
-        /* Define CSS classes for different text sizes */
-        .small-text { font-size: 12px; }
-        .medium-text { font-size: 20px; }
-        .large-text { font-size: 24px; }
-        .extra-large-text { font-size: 32px; }
-    </style>
-</head>
-<body>
-    <p class="medium-text">  🎧Music taste is a deeply personal aspect of one's identity, often reflecting emotions, experiences, and cultural background. </p>
-    <p class="medium-text">  Some people enjoy the soulful rhythm of jazz or the timeless melodies of classical music, while others are drawn to the energy of rock or the beat of hip-hop. </p>
-    <p class="medium-text">  For me, music is not just about the sound—it's about the stories and feelings each song conveys.</p>
-    <p class="medium-text">  Here are some artists I appreciate: </p>
-</body>
 <style>
-        body {
-            text-align: left;
-            background-color: #000;
-            color: #fff;
-        }
-        /* 左侧花纹 */
-        .left-pattern {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的左侧花纹图片链接 */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        /* 右侧花纹 */
-        .right-pattern {
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的右侧花纹图片链接 */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        /* 内容居中显示 */
+/* Define CSS classes for different text sizes */
+    .small-text { font-size: 12px; }
+    .medium-text { font-size: 20px; }
+    .large-text { font-size: 24px; }
+    .extra-large-text { font-size: 32px; }
+    </style>
+
+<p class="medium-text">  🎧Music taste is a deeply personal aspect of one's identity, often reflecting emotions, experiences, and cultural background. </p>
+<p class="medium-text">  Some people enjoy the soulful rhythm of jazz or the timeless melodies of classical music, while others are drawn to the energy of rock or the beat of hip-hop. </p>
+<p class="medium-text">  For me, music is not just about the sound—it's about the stories and feelings each song conveys.</p>
+<p class="medium-text">  Here are some artists I appreciate: </p>
+
+<style>
         .content {
             margin: 0 auto;
             max-width: 800px;
@@ -58,13 +25,7 @@ permalink: /music/
             text-align: center;
         }
     </style>
-<body>
-    <!-- 左侧花纹 -->
-    <div class="left-pattern"></div>
-    <!-- 右侧花纹 -->
-    <div class="right-pattern"></div>
 
-</body>
 <h3># Artists</h3>
 <!-- Artist Namecards -->
 <div>
@@ -111,14 +72,6 @@ function showSongs(artistId) {
 </script>
 
 <style>
-/* Ensure the body background is black */
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 /* Style for artist buttons */
 .artist-buttons button {

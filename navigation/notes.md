@@ -17,38 +17,6 @@ permalink: /notes/
 
 ## Record
 <style>
-        body {
-            background-color: black;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* 左侧花纹 */
-        .left-pattern {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的左侧花纹图片链接 */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* 右侧花纹 */
-        .right-pattern {
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 200px;
-            height: 100%;
-            background-image: url('https://cdn.pixabay.com/photo/2022/11/02/22/25/background-7566164_1280.jpg'); /* 替换为你的右侧花纹图片链接 */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        /* 内容居中显示 */
         .content {
             margin: 0 auto;
             max-width: 800px;
@@ -56,15 +24,7 @@ permalink: /notes/
             text-align: center;
         }
     </style>
-<body>
 
-<!-- 左侧花纹 -->
-<div class="left-pattern"></div>
-
-<!-- 右侧花纹 -->
-<div class="right-pattern"></div>
-
-</body>
 <!-- Journey List -->
 <ul class="journey-list">
     <li><a href="#" onclick="showJourney('journey1')">Week 1</a></li>
@@ -149,15 +109,7 @@ function showJourney(journeyId) {
 </script>
 
 <style>
-/* Ensure the body background is black */
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
+    
 /* Style for the journey list */
 .journey-list {
     list-style-type: none; /* Remove default bullet points */
