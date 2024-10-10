@@ -74,7 +74,7 @@ comments: true
 
 <script>
     function MusicTaste() {
-        window.location.href = "http://127.0.0.1:4100/anyiwang_2025/music/";
+        window.location.href = "https://annie0523.github.io/anyiwang_2025/music/";
     }
 
     function showMyHometown() {
