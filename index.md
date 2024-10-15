@@ -130,8 +130,12 @@ Here is a rainbow animation:
   }
 </style>
 
-  <style>
-    /* CSS style rules for the sprite */
+## teaching lesson
+- [Big Idea 3.3](https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/3-3/p1)
+- [Big Idea 3.5](https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/3-5/p1)
+
+<style>
+  /* CSS style rules for the sprite */
     .sprite {
       height: 512px; /* Make the sprite larger */
       width: 512px;  /* Make the sprite larger */
@@ -147,13 +151,17 @@ Here is a rainbow animation:
     }
   </style>
 
+<!-- Liquid:  statements-->
 
+<!-- Include submenu from _includes to top of pages -->
+{% include nav/home.html %}
 <!--- Concatenation of site URL to frontmatter image  --->
 {% assign sprite_file = site.baseurl | append: page.image %}
 <!--- Has is a list variable containing mario metadata for sprite --->
 {% assign hash = site.data.mario_metadata %}  
 <!--- Size width/height of Sprit images --->
 {% assign pixels = 256 %}
+
 <!--- HTML for page contains <p> tag named "Mario" and class properties for a "sprite"  -->
 
 <p id="mario" class="sprite"></p>
@@ -200,7 +208,7 @@ Here is a rainbow animation:
   class Mario {
     constructor(meta_data) {
       this.tID = null;  //capture setInterval() task ID
-      this.positionX = 10;  // current position of sprite in X direction
+      this.positionX = 0;  // current position of sprite in X direction
       this.currentSpeed = 0;
       this.marioElement = document.getElementById("mario"); //HTML element of sprite
       this.pixels = {{pixels}}; //pixel offset of images in the sprite, set by liquid constant
@@ -326,4 +334,3 @@ Here is a rainbow animation:
   });
 
 </script>
-
