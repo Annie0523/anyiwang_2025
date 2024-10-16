@@ -134,6 +134,9 @@ Here is a rainbow animation:
 - [Big Idea 3.3](https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/3-3/p1)
 - [Big Idea 3.5](https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/3-5/p1)
 
+
+
+
 <style>
   /* CSS style rules for the sprite */
     .sprite {
@@ -150,7 +153,7 @@ Here is a rainbow animation:
       left: 100px; /* Adjust starting horizontal position */
     }
   </style>
-  
+
 <!--- Concatenation of site URL to frontmatter image  --->
 {% assign sprite_file = site.baseurl | append: page.image %}
 <!--- Has is a list variable containing mario metadata for sprite --->
