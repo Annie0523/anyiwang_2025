@@ -130,7 +130,7 @@ Here is a rainbow animation:
   }
 </style>
 
-## teaching lesson
+## Teaching Lesson
 - [Big Idea 3.3](https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/3-3/p1)
 - [Big Idea 3.5](https://nighthawkcoders.github.io/portfolio_2025/csp/big-idea/3-5/p1)
 
