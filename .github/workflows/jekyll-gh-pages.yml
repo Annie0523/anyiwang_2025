@@ -1,15 +1,28 @@
-name: GitHub Pages
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches:
-      - main
+    branches: ["main"]
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  id-token: write
   contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
+  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +31,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # 设置你需要的 Ruby 版本
+          ruby-version: '3.1' # Set this to your desired Ruby version
           bundler-cache: true
       - name: Install Jekyll and dependencies
         run: |
@@ -26,33 +39,28 @@ jobs:
           bundle install
       - name: Install Python dependencies
         run: |
-          python -m venv venv  # 创建虚拟环境
-          source venv/bin/activate  # 激活虚拟环境
-          pip install -r requirements.txt  # 安装 Python 包
+          python -m venv venv  # Create virtual environment
+          source venv/bin/activate  # Activate the virtual environment
+          pip install -r requirements.txt  # Install Python packages
+
       - name: Execute conversion script
         run: |
-          source venv/bin/activate  # 激活虚拟环境
-          python scripts/convert_notebooks.py  # 运行你的 Python 脚本
+          source venv/bin/activate  # Activate virtual environment
+          python scripts/convert_notebooks.py  # Run your Python script
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build  # 构建你的 Jekyll 站点
-      - name: List _site directory
-        run: ls -la _site
+          bundle exec jekyll build  # Build your Jekyll site
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: site
-          path: _site
+        uses: actions/upload-pages-artifact@v3
 
+  # Deployment job
   deploy:
-    runs-on: ubuntu-latest
-    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
-        with:
-          artifact_name: site
+        uses: actions/deploy-pages@v4
