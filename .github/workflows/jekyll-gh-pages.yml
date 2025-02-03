@@ -18,7 +18,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Set this to your desired Ruby version
+          ruby-version: '3.1' # 设置你需要的 Ruby 版本
           bundler-cache: true
       - name: Install Jekyll and dependencies
         run: |
@@ -26,16 +26,18 @@ jobs:
           bundle install
       - name: Install Python dependencies
         run: |
-          python -m venv venv  # Create virtual environment
-          source venv/bin/activate  # Activate the virtual environment
-          pip install -r requirements.txt  # Install Python packages
+          python -m venv venv  # 创建虚拟环境
+          source venv/bin/activate  # 激活虚拟环境
+          pip install -r requirements.txt  # 安装 Python 包
       - name: Execute conversion script
         run: |
-          source venv/bin/activate  # Activate virtual environment
-          python scripts/convert_notebooks.py  # Run your Python script
+          source venv/bin/activate  # 激活虚拟环境
+          python scripts/convert_notebooks.py  # 运行你的 Python 脚本
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build  # Build your Jekyll site
+          bundle exec jekyll build  # 构建你的 Jekyll 站点
+      - name: List _site directory
+        run: ls -la _site
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
